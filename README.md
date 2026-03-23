@@ -1,6 +1,8 @@
 # 16-bit-CPU
 Overview
 
+Overview
+
 This project is a custom CPU designed in Verilog using Xilinx Vivado. It features a 16-bit instruction format and a 3-stage execution cycle.
 
 The CPU includes a 4-bit ALU, register file, program counter, branching logic, and an FSM-based control unit with Fetch, Execute, and Write states.
@@ -32,10 +34,11 @@ Instruction Format
 [12:9]  ALU Opcode
 [8:6]   Destination Register
 [5:3]   Source Register 1
-[2:0]   Source Register 2
+r[2:0]   Source Register 2
 Branch Instruction
 [3:0] Branch Target Address
-ALU Operations
+
+ALU Operations:
 ADD
 SUB
 XOR
@@ -50,7 +53,8 @@ Z (Zero)
 N (Negative)
 C (Carry)
 O (Overflow)
-Register File
+
+Register File:
 8 registers
 2 read ports
 1 write port
@@ -71,6 +75,7 @@ The Program Counter jumps to the branch target address
 Testing
 Verified using Vivado simulation
 Successfully deployed on FPGA hardware
+
 Future Work
 GPU integration
 Sound chip implementation
@@ -82,18 +87,3 @@ Demonstrates CPU architecture design
 Implements FSM-based control logic
 Validated through simulation and FPGA deployment
 Includes custom instruction set design
-Why this will work now:
-No invalid markdown (removed those weird id= things)
-Proper triple backticks for code blocks
-Clean spacing GitHub actually respects
-No weird line breaks that collapse sections
-
-If you want, next step I’d recommend (this is what actually gets attention from recruiters):
-
-I can add:
-
-A datapath diagram section
-A sample instruction execution walkthrough
-Or make this match exact FPGA job descriptions so your repo hits keywords automatically
-
-Just say the word.
